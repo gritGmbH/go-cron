@@ -1,5 +1,5 @@
 module github.com/gritGmbH/go-cron
 
-go 1.27.1
+go 1.22.2
 
-require github.com/gritGmbH/cron
+require github.com/gritGmbH/cron v1.2.0
