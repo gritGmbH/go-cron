@@ -1,7 +1,7 @@
 package gocron
 
 import (
-	"github.com/robfig/cron"
+	"github.com/gritGmbH/cron"
 	"io"
 	"log"
 	"os"
