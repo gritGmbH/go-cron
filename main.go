@@ -1,8 +1,8 @@
+package main
+
 // This section of code was created in part or in full using Google Gemini on 28 September 2026.
 // Manually checked (and modified) by Jonas Neubürger
 // Start AI
-
-package main
 
 import (
 	"flag"
