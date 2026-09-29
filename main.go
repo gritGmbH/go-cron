@@ -11,7 +11,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	gocron "github.com/gritGmbH/go-cron/go-cron"
+	gocron "go-cron/go-cron"
 )
 
 func main() {

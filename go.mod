@@ -1,4 +1,4 @@
-module github.com/gritGmbH/go-cron
+module go-cron
 
 go 1.22.2
 
