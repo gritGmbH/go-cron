@@ -1,6 +1,0 @@
-github.com/gritGmbH/cron v1.2.0 h1:ad2HAG3o9ioD3apMHZpY4XO3o8MSeoFj4SX/suoPbO4=
-github.com/gritGmbH/cron v1.2.0/go.mod h1:qYaux8KNFchA+gyp5ZmU8h7ehE3t3FGlYyhEdkIorvA=
-github.com/gritGmbH/go-cron v0.0.0-20150311130445-6f160c2b9ae4 h1:bFVvAktRbYMdH0B4yBCq0qd1de0XqLDYNNlNLAmppjg=
-github.com/gritGmbH/go-cron v0.0.0-20150311130445-6f160c2b9ae4/go.mod h1:drxfl0Pcqk1RFUWrqhLnK12Eus9OtsbOo81Wusx9f7o=
-github.com/robfig/cron v1.2.0 h1:ZjScXvvxeQ63Dbyxy76Fj3AT3Ut0aKsyd2/tl3DTMuQ=
-github.com/robfig/cron v1.2.0/go.mod h1:JGuDeoQd7Z6yL4zQhZ3OPEVHB7fL6Ka6skscFHfmt2k=
