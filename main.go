@@ -15,12 +15,10 @@ import (
 )
 
 func main() {
-	// 1. Setup flags for schedule and port
 	schedule := flag.String("s", "* * * * * *", "Cron schedule")
 	port := flag.String("p", "18080", "HTTP server port")
 	flag.Parse()
 
-	// 2. Parse the command and its arguments
 	args := flag.Args()
 	if len(args) < 1 {
 		fmt.Println("Usage: go-cron -s \"<schedule>\" -p <port> <command> [args...]")
@@ -29,21 +27,15 @@ func main() {
 	command := args[0]
 	cmdArgs := args[1:]
 
-	// 3. Create the cron job using the exported function from go-cron.go
 	c, wg := gocron.Create(*schedule, command, cmdArgs)
-
-	// 4. Start the scheduler
 	gocron.Start(c)
 
-	// 5. Run the health check HTTP server in a background goroutine
 	go gocron.Http_server(*port)
 
-	// 6. Listen for termination signals (like Ctrl+C or Docker stop)
 	ch := make(chan os.Signal, 1)
 	signal.Notify(ch, os.Interrupt, syscall.SIGTERM)
 	<-ch
 
-	// 7. Stop the scheduler gracefully
 	gocron.Stop(c, wg)
 }
 
